@@ -9,8 +9,8 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   <VerticalNavGroup
     :item="{
       title: 'Dashboards',
-      badgeContent: '5',
-      badgeClass: 'bg-error',
+      badgeContent: 1,
+      badgeClass: 'bg-primary',
       icon: 'ri-home-smile-line',
     }"
   >
@@ -18,42 +18,6 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       :item="{
         title: 'Analytics',
         to: '/dashboard',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'CRM',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/crm',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'ECommerce',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/ecommerce',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Academy',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/academy',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Logistics',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/logistics',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
       }"
     />
   </VerticalNavGroup>
@@ -104,53 +68,12 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     />
   </VerticalNavGroup>
 
-  <!-- 👉 Apps & Pages -->
+  <!-- 👉 Comissão de Serviço -->
   <VerticalNavSectionTitle
     :item="{
-      heading: 'Apps & Pages',
+      heading: 'Comissão de Serviço',
     }"
   />
-  <VerticalNavLink
-    :item="{
-      title: 'Permissions',
-      icon: 'ri-lock-2-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/apps/permissions',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Email',
-      icon: 'ri-mail-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/apps/email',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Chat',
-      icon: 'ri-wechat-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/apps/chat',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Calendar',
-      icon: 'ri-calendar-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/apps/calendar',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-
   <VerticalNavLink
     :item="{
       title: 'Account Settings',
@@ -159,6 +82,20 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     }"
   />
 
+
+  <!-- 👉 Apps & Pages -->
+  <VerticalNavSectionTitle
+    :item="{
+      heading: 'Apps & Pages',
+    }"
+  />
+  <VerticalNavLink
+    :item="{
+      title: 'Account Settings',
+      icon: 'ri-user-settings-line',
+      to: '/account-settings',
+    }"
+  />
   <VerticalNavLink
     :item="{
       title: 'Login',
@@ -224,26 +161,6 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   />
   <VerticalNavLink
     :item="{
-      title: 'Form Validation',
-      icon: 'ri-checkbox-multiple-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/forms/form-validation',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Form Wizard',
-      icon: 'ri-git-commit-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/forms/form-wizard-numbered',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
       title: 'Tables',
       icon: 'ri-table-alt-line',
       to: '/tables',
@@ -253,10 +170,10 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   <!-- 👉 Others -->
   <VerticalNavSectionTitle
     :item="{
-      heading: 'Others',
+      heading: 'Links Úteis',
     }"
   />
-  <VerticalNavLink
+  <!-- <VerticalNavLink
     :item="{
       title: 'Access Control',
       icon: 'ri-shield-line',
@@ -265,7 +182,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       badgeContent: 'Pro',
       badgeClass: 'bg-light-primary text-primary',
     }"
-  />
+  /> -->
   <VerticalNavLink
     :item="{
       title: 'Documentation',
@@ -276,9 +193,25 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   />
   <VerticalNavLink
     :item="{
-      title: 'Raise Support',
-      href: 'https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/issues',
-      icon: 'ri-lifebuoy-line',
+      title: 'Quadro de Anúncios',
+      href: 'https://sites.google.com/view/cong-paraiso',
+      icon: 'ri-dashboard-line',
+      target: '_blank',
+    }"
+  />
+  <VerticalNavLink
+    :item="{
+      title: 'Enviar Relatório',
+      href: 'https://docs.google.com/forms/d/e/1FAIpQLSeLQw2g8sQEjWduGodv0xVCAs1h9JOBJX8gnTKLQelrEgH6WA/viewform',
+      icon: 'ri-draft-line',
+      target: '_blank',
+    }"
+  />
+  <VerticalNavLink
+    :item="{
+      title: 'Enviar Donativo',
+      href: 'https://donate.jw.org/ui/T/donate-home.html#/donate',
+      icon: 'ri-secure-payment-line',
       target: '_blank',
     }"
   />
